@@ -1,185 +1,376 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ремонт техники</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body>
 
+  <nav class="navbar">
+  <a href="#" class="navbar-brand">Ремонт техники</a>
+
+  <button type="button" class="burger-btn" id="burgerBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="navbar-nav" id="navbarNav">
+    <div class="navbar-links">
+      <a href="#">Преимущества</a>
+      <a href="#">Команда</a>
+      <a href="#">Услуги</a>
+    </div>
+    <div class="navbar-contact">
+      <p class="navbar-contact-title">Служба продаж</p>
+      <a href="tel:+74951234567" class="navbar-contact-tel">+7 495 123-45-67</a>
+    </div>
+    <button type="button" class="navbar-button">Заказать звонок</button>
+  </div>
+</nav>
+
+
+<div class="overlay" id="overlay"></div>
+
+    <main class="main-menu">
+      <div class="main-content">
+        <h1>Ремонт ноутбуков<br>в вашем городе</h1>
+        <p class="main-subtitle">
+          Ремонт ноутбуков и другой техники в вашем городе по самым низким ценам
+        </p>
+        
+        <div class="main-actions">
+          <button class="btn btn-primary">Оставить заявку</button>
+          <button class="btn btn-secondary">Узнать подробности</button>
+        </div>
+
+        <p class="main-bonus">
+          Оставьте заявку прямо сейчас и получите в подарок<br>
+          <span>бесплатную диагностику с выездом на дом</span>
+        </p>
+     
+    </main>
+    <div class="trust-block">
+  <h2>Нам доверяют</h2>
+  <p class="trust-subtitle">
+    <b>Более 5 000 физических и юридических лиц доверили нам ремонт своей техники</b>
+  </p>
+
+  <div class="trust-items">
+    <div class="item">
+      <div class="circle">%</div>
+      <h3>Гарантия<br>5 месяцев</h3>
+      <p>Создавайте счёт и отправляйте контрагенту одной кнопкой</p>
+    </div>
+
+    <div class="item">
+      <div class="circle">%</div> 
+      <h3>Выезжаем<br>к вам домой</h3>
+      <p>Создавайте счёт и отправляйте контрагенту одной кнопкой</p>
+    </div>
+
+    <div class="item">
+      <div class="circle">%</div>
+      <h3>Более 5 лет<br>на рынке</h3>
+      <p>Создавайте счёт и отправляйте контрагенту одной кнопкой</p>
+    </div>
+
+    <div class="item">
+      <div class="circle">%</div>
+      <h3>Чиним всю<br>технику</h3>
+      <p>Создавайте счёт и отправляйте контрагенту одной кнопкой</p>
+    </div>
+  </div>
+</div>
+<div class="reviews-block">
+  <button class="arrow-btn"> <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.69093 10.669L11.0889 1.33793L9.60228 -6.49808e-08L0.000210296 10.669L9.60228 21.3379L11.0889 20L2.69093 10.669Z" fill="#FCDF00"/>
+</svg>
+ </button>
+
+  <div class="review-content">
+    <img src="./img/Ellipse 1.png" alt="Александра" class="review-avatar">
+    
+   <p class="review-text">
+  Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!
+</p>
+
+    
+    <p class="review-author">Александра Селезнева</p>
+    <p class="review-job">фотограф</p>
+
+    <div class="pagination">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <button class="arrow-btn"><svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.39793 10.669L5.84828e-08 1.33793L1.48659 -6.49808e-08L11.0887 10.669L1.48659 21.3379L8.74228e-07 20L8.39793 10.669Z" fill="#FCDF00"/>
+</svg>
+</button>
+</div>
+
+<div class="order-block">
+  <div class="order-content">
+    <h2>Закажи онлайн</h2>
+    <p class="order-subtitle">
+
+
+      Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности
+    </p>
+
+
+
+
+    <form class="order-form" onsubmit="return false;">
+      <input type="text" placeholder="+7 (000) 000-0000" class="order-input">
+      <button class="order-btn">Оставить заявку</button>
+    </form>
+
+    <p class="order-agreement">
+      Оставляя заявку, вы соглашаетесь на обработку персональных данных и с условиями бронирования счёта
+
+    </p>
+  </div>
+</div>
+
+<div class="team-block">
+  <p class="team-topline">Лучшие в своем деле</p>
+  <h2>Наша команда</h2>
+  <p class="team-subtitle">Вот уже 12 лет мы помогаем вашей технике служить долго</p>
+
+  <div class="team-items" data-aos="zoom-in" >
+    <div class="team-member">
+      <img src="./img/79dc098347930dd20ce283233cfb8aa56b11a8c5.jpg" alt="Мастер" class="team-avatar">
+      <h3>Имя Фамилия</h3>
+      <p>Ремонтирую ноутбуки</p>
+    </div>
+
+    <div class="team-member">
+      <img src="./img/1c2589a559d783f359a5048a779de4e1c8f8f987.jpg" alt="Мастер" class="team-avatar">
+      <h3>Имя Фамилия</h3>
+      <p>Устанавливаю ПО</p>
+    </div>
+
+    <div class="team-member">
+      <img src="./img/7e82e944fd10fe1ff110039ffa0ad96366f42459.jpg" alt="Мастер" class="team-avatar">
+      <h3>Имя Фамилия</h3>
+      <p>Чиню приставки</p>
+    </div>
+  </div>
+</div>
+
+<div class="pricing-block" >
+  <h2>Пакеты услуг</h2>
+  <p class="pricing-subtitle">Выберите подходящий пакет услуг</p>
+
+  <div class="pricing-cards" data-aos="flip-up">
+    <div class="card">
+      <div class="card-price">0 ₽</div>
+      <h3>Диагностика вашей техники</h3>
+      <p class="card-desc">Проведем полную диагностику вашей техники. Вы можете привезти технику в наш офис, либо мы сами заберем её из вашего дома или офиса</p>
+      <button class="card-btn">Рассчитать</button>
+    </div>
+
+    <div class="card" data-aos="flip-up">
+      <div class="card-price">от 990 ₽</div>
+      <h3>Ремонт ноутбуков</h3>
+      <p class="card-desc">
+        - Замена дисплея<br>
+        - Установка оперативной памяти<br>
+        - Установка ОС<br>
+        - Чистка от вирусов<br>
+        - Установка программного обеспечения<br>
+        и т.д.
+      </p>
+      <button class="card-btn">Рассчитать</button>
+    </div>
+
+    <div class="card">
+      <div class="card-price">от 495 ₽</div>
+      <h3>Ремонт другой электроники</h3>
+      <p class="card-desc">
+        - Ремонт зарядных устройств<br>
+        - Замена дисплеев<br>
+        - Пайка микросхем<br>
+        - Установка комплектующих<br>
+        - Ремонт портативных компьютеров, ПК<br>
+        - Ремонт роутеров<br>
+        и т.д.
+      </p>
+      <button class="card-btn">Рассчитать</button>
+    </div>
+  </div>
+</div>
+
+<div class="brands-block" >
+  <h2>Ремонт всех марок</h2>
+  <div class="brands-grid">
+    <div class="brands-track">
+      <div class="brand-card"><img src="./img/0a1003d43c97ef8099f19194ff933afcbfadf6ce.png" alt="ASUS"></div>
+      <div class="brand-card"><img src="./img/749ef361bbbc4c1a23c39c7a70a07a2c0a9d7c4f.png" alt="Beauty Box"></div>
+      <div class="brand-card"><img src="./img/33a8f0ba3d75629ed6c593d4ee03a7b577f8ec49.png" alt="The Dance Studio"></div>
+      <div class="brand-card"><img src="./img/ad64887d308fa5adec0803b1ae37607129417634.png" alt="Yoga Baby"></div>
+      
+      <div class="brand-card"><img src="./img/0a1003d43c97ef8099f19194ff933afcbfadf6ce.png" alt="ASUS"></div>
+      <div class="brand-card"><img src="./img/749ef361bbbc4c1a23c39c7a70a07a2c0a9d7c4f.png" alt="Beauty Box"></div>
+      <div class="brand-card"><img src="./img/33a8f0ba3d75629ed6c593d4ee03a7b577f8ec49.png" alt="The Dance Studio"></div>
+      <div class="brand-card"><img src="./img/ad64887d308fa5adec0803b1ae37607129417634.png" alt="Yoga Baby"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="contact-block">
+  <div class="contact-content">
+    <h2>Свяжитесь с нами</h2>
+    <p class="contact-subtitle">Оставьте заявку на банковскую гарантию</p>
+    <form class="contact-form" onsubmit="return false;">
+      <input type="text" placeholder="Ваше имя" class="contact-input">
+      <input type="text" placeholder="+7 (000) 000-0000" class="contact-input">
+      <input type="email" placeholder="E-mail" class="contact-input">
+      <button class="contact-btn">Оставить заявку</button>
+    </form>
+    <p class="contact-agreement">
+      Оставляя заявку, вы соглашаетесь на обработку персональных данных и с условиями бронирования счёта
+    </p>
+  </div>
+</div>
+
+<div class="gallery-block" >
+  <div class="gallery-grid">
+    <div class="gallery-main" data-aos="zoom-in">
+      <img src="./img/81f35680582177109d1159b660282b6cd747ca47.jpg" alt="">
+    </div>
+    <div class="gallery-side" data-aos="zoom-in">
+      <img src="./img/69328657fe0edbad6691541a24bb143f4ce6ff4f.jpg" alt="">
+      <img src="./img/69ee89f048cc4c5f24742e892783139ab8d25eb9.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="footer-form-block">
+  <div class="footer-form-container">
+    <h2>Закажите ремонт техники</h2>
+    <p class="footer-form-subtitle">Заполните форму и закажите полис</p>
+
+    <form class="footer-form" onsubmit="return false;">
+      <input type="text" placeholder="Ваше имя" class="footer-input">
+      <input type="text" placeholder="+7 (000) 000-0000" class="footer-input">
+      <input type="email" placeholder="E-mail" class="footer-input">
+
+      <p class="radio-title">Какой полис вас интересует</p>
+      
+      <div class="radio-group">
+        <label class="radio-label">
+          <input type="radio" name="policy" checked>
+          <span></span> КАСКО
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="policy">
+          <span></span> ОСАГО
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="policy">
+          <span></span> Страхование жизни
+        </label>
+      </div>
+
+      <button class="footer-form-btn">Заказать полис</button>
+    </form>
+
+    <p class="footer-form-agreement">
+      Оставляя заявку, вы соглашаетесь на обработку персональных данных и с условиями бронирования счёта
+    </p>
+  </div>
+</div>
+
+<div class="contacts-map-block">
+  <div class="map-side" data-aos="zoom-in">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.1026895656231!2d69.24513507456712!3d41.321680608379204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b3de831c4b3%3A0xf30d4af3459af31a!2sUPG%20-%20HOME%20FOR%20GAMERS!5e0!3m2!1sru!2s!4v1792210802222!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+  <div class="contacts-side">
+    <h2>Контакты</h2>
+    <p class="contacts-phone">+7 987 654-32-10</p>
+    <a href="mailto:info@constructor.ru" class="contacts-email">info@constructor.ru</a>
+    <p class="contacts-address">г. Москва, метро "Китай город",<br>ул. Яузская, дом 15/11</p>
+  </div>
+</div>
+
+<footer class="main-footer">
+  <div class="footer-copy">© 2020 Ремонт техники</div>
   
+  <div class="footer-links">
+    <a href="#">О компании</a>
+    <a href="#">Новости</a>
+    <a href="#">Помощь</a>
+    <a href="#">Контакты</a>
+  </div>
+  
+  <div class="footer-info">
+    <a href="tel:+74951234567" class="footer-tel">+7 495 123-45-67</a>
+    <a href="mailto:name@company.ru" class="footer-mail">name@company.ru</a>
+  </div>
+  
+  <div class="footer-social">
+    <a href="#" class="social-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="28" cy="28" r="28" fill="#1A236E"/>
+<g clip-path="url(#clip0_3250_444)">
+<path d="M39.9981 27.9991C39.9981 21.3722 34.626 16 27.9991 16C21.3722 16 16 21.3722 16 27.9991C16 33.9882 20.3879 38.9522 26.1242 39.8524V31.4676H23.0776V27.9991H26.1242V25.3555C26.1242 22.3483 27.9156 20.6871 30.6564 20.6871C31.9692 20.6871 33.3424 20.9215 33.3424 20.9215V23.8744H31.8294C30.3388 23.8744 29.8739 24.7993 29.8739 25.7482V27.9991H33.2018L32.6698 31.4676H29.8739V39.8524C35.6103 38.9522 39.9981 33.9882 39.9981 27.9991Z" fill="#FCDF00"/>
+</g>
+<defs>
+<clipPath id="clip0_3250_444">
+<rect width="24" height="24" fill="white" transform="translate(16 16)"/>
+</clipPath>
+</defs>
+</svg>
+</a>
+    <a href="#" class="social-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="28" cy="28" r="28" fill="#1A236E"/>
+<g clip-path="url(#clip0_3250_458)">
+<path d="M28 16C24.74 16 24.333 16.015 23.053 16.072C21.775 16.132 20.905 16.333 20.14 16.63C19.351 16.936 18.681 17.347 18.014 18.014C17.347 18.681 16.935 19.35 16.63 20.14C16.333 20.905 16.131 21.775 16.072 23.053C16.012 24.333 16 24.74 16 28C16 31.26 16.015 31.667 16.072 32.947C16.132 34.224 16.333 35.095 16.63 35.86C16.936 36.648 17.347 37.319 18.014 37.986C18.681 38.652 19.35 39.065 20.14 39.37C20.906 39.666 21.776 39.869 23.053 39.928C24.333 39.988 24.74 40 28 40C31.26 40 31.667 39.985 32.947 39.928C34.224 39.868 35.095 39.666 35.86 39.37C36.648 39.064 37.319 38.652 37.986 37.986C38.652 37.319 39.065 36.651 39.37 35.86C39.666 35.095 39.869 34.224 39.928 32.947C39.988 31.667 40 31.26 40 28C40 24.74 39.985 24.333 39.928 23.053C39.868 21.776 39.666 20.904 39.37 20.14C39.064 19.351 38.652 18.681 37.986 18.014C37.319 17.347 36.651 16.935 35.86 16.63C35.095 16.333 34.224 16.131 32.947 16.072C31.667 16.012 31.26 16 28 16ZM28 18.16C31.203 18.16 31.585 18.176 32.85 18.231C34.02 18.286 34.655 18.48 35.077 18.646C35.639 18.863 36.037 19.123 36.459 19.542C36.878 19.962 37.138 20.361 37.355 20.923C37.519 21.345 37.715 21.98 37.768 23.15C37.825 24.416 37.838 24.796 37.838 28C37.838 31.204 37.823 31.585 37.764 32.85C37.703 34.02 37.508 34.655 37.343 35.077C37.119 35.639 36.864 36.037 36.444 36.459C36.025 36.878 35.62 37.138 35.064 37.355C34.644 37.519 33.999 37.715 32.829 37.768C31.555 37.825 31.18 37.838 27.97 37.838C24.759 37.838 24.384 37.823 23.111 37.764C21.94 37.703 21.295 37.508 20.875 37.343C20.306 37.119 19.915 36.864 19.496 36.444C19.075 36.025 18.806 35.62 18.596 35.064C18.431 34.644 18.237 33.999 18.176 32.829C18.131 31.569 18.115 31.18 18.115 27.985C18.115 24.789 18.131 24.399 18.176 23.124C18.237 21.954 18.431 21.31 18.596 20.89C18.806 20.32 19.075 19.93 19.496 19.509C19.915 19.09 20.306 18.82 20.875 18.611C21.295 18.445 21.926 18.25 23.096 18.19C24.371 18.145 24.746 18.13 27.955 18.13L28 18.16V18.16ZM28 21.838C24.595 21.838 21.838 24.598 21.838 28C21.838 31.405 24.598 34.162 28 34.162C31.405 34.162 34.162 31.402 34.162 28C34.162 24.595 31.402 21.838 28 21.838ZM28 32C25.79 32 24 30.21 24 28C24 25.79 25.79 24 28 24C30.21 24 32 25.79 32 28C32 30.21 30.21 32 28 32ZM35.846 21.595C35.846 22.39 35.2 23.035 34.406 23.035C33.611 23.035 32.966 22.389 32.966 21.595C32.966 20.801 33.612 20.156 34.406 20.156C35.199 20.155 35.846 20.801 35.846 21.595Z" fill="#FCDF00"/>
+</g>
+<defs>
+<clipPath id="clip0_3250_458">
+<rect width="24" height="24" fill="white" transform="translate(16 16)"/>
+</clipPath>
+</defs>
+</svg>
+</a>
+    <a href="#" class="social-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="28" cy="28" r="28" fill="#1A236E"/>
+<g clip-path="url(#clip0_3250_471)">
+<path d="M39.954 20.5691C39.069 20.9581 38.124 21.2231 37.129 21.3441C38.143 20.7331 38.923 19.7701 39.292 18.6211C38.341 19.1761 37.287 19.5801 36.165 19.8051C35.269 18.8461 33.992 18.2461 32.574 18.2461C29.857 18.2461 27.654 20.4491 27.654 23.1631C27.654 23.5531 27.699 23.9281 27.781 24.2871C23.691 24.0941 20.066 22.1301 17.64 19.1611C17.213 19.8831 16.974 20.7221 16.974 21.6361C16.974 23.3461 17.844 24.8491 19.162 25.7321C18.355 25.7061 17.596 25.4841 16.934 25.1161V25.1771C16.934 27.5621 18.627 29.5511 20.88 30.0041C20.467 30.1151 20.031 30.1751 19.584 30.1751C19.27 30.1751 18.969 30.1451 18.668 30.0891C19.299 32.0421 21.113 33.4661 23.272 33.5061C21.592 34.8251 19.463 35.6111 17.17 35.6111C16.78 35.6111 16.391 35.5881 16 35.5441C18.189 36.9381 20.768 37.7531 23.557 37.7531C32.611 37.7531 37.556 30.2571 37.556 23.7671C37.556 23.5581 37.556 23.3471 37.541 23.1371C38.502 22.4481 39.341 21.5771 40.001 20.5891L39.954 20.5691Z" fill="#FCDF00"/>
+</g>
+<defs>
+<clipPath id="clip0_3250_471">
+<rect width="24" height="24" fill="white" transform="translate(16 16)"/>
+</clipPath>
+</defs>
+</svg>
+</a>
+    <a href="#" class="social-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="28" cy="28" r="28" fill="#1A236E"/>
+<path d="M39.057 35.3021H36.4367C35.4451 35.3021 35.1386 34.5133 33.3566 32.7073C31.8046 31.2048 31.1179 31.002 30.7363 31.002C30.2014 31.002 30.0482 31.1552 30.0482 31.893V34.2594C30.0482 34.8964 29.8453 35.278 28.1656 35.278C25.392 35.278 22.3119 33.5983 20.1498 30.4671C16.8925 25.8876 16 22.4514 16 21.7392C16 21.3576 16.1533 21.0015 16.891 21.0015H19.5113C20.1724 21.0015 20.4278 21.3065 20.6832 22.0187C21.9799 25.7598 24.1434 29.0428 25.0344 29.0428C25.3649 29.0428 25.5182 28.8895 25.5182 28.0511V24.1807C25.416 22.3988 24.474 22.2471 24.474 21.6115C24.474 21.305 24.7294 21 25.1351 21H29.2579C29.8183 21 30.0211 21.305 30.0211 21.9661V27.1842C30.0211 27.7431 30.2765 27.9475 30.4283 27.9475C30.7588 27.9475 31.0398 27.7431 31.6498 27.1331C33.5339 25.0206 34.8816 21.7633 34.8816 21.7633C35.0604 21.3816 35.3654 21.0255 36.028 21.0255H38.6483C39.4371 21.0255 39.6159 21.4312 39.4371 21.9916C39.1066 23.5197 35.9003 28.0481 35.9003 28.0481C35.6208 28.5064 35.5187 28.7092 35.9003 29.2201C36.1798 29.6017 37.0963 30.3905 37.7078 31.1027C38.8271 32.3753 39.6911 33.4435 39.9209 34.1827C40.1764 34.919 39.7932 35.3006 39.0555 35.3006L39.057 35.3021Z" fill="#FCDF00"/>
+</svg>
+</a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 
 
-  <header class="header">
-    <nav class="nav">
-      <a href="#" class="nav-link">SHOP</a>
-      <a href="#" class="nav-link">EXPLORE</a>
-    </nav>
-    <div class="logo">
-      <img src="img/Frame (4).png" alt="">
-    </div>
-    <div class="cart">
-      <a href="#" class="nav-link">MY CART</a>
-    </div>
-  </header>
-
-  <section class="hero-banner">
-    <div class="hero-content">
-      <h1>The Desk Shelf System</h1>
-      <p>Available in Walnut or Maple</p>
-      <a href="#" class="btn-link">LEARN MORE</a>
-    </div>
-  </section>
-
-  <section class="section design-inspires">
-    <div class="container text-center">
-      <h2>Design Inspires</h2>
-      <p class="subtitle">Build your dream workspace, so you can get your best work done.</p>
-      <a href="#" class="btn-link font-bold">GET STARTED</a>
-    </div>
-
-    <div class="container grid-2">
-
-
-      <div class="card">
-        <div class="card-img">
-          <img src="./img/Rectangle (1).png" alt="Desk Pads">
-        </div>
-        <h3>Desk Pads</h3>
-        <a href="#" class="btn-link">LEARN MORE</a>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="./img/Rectangle (2).png" alt="Laptop Stands">
-        </div>
-        <h3>Laptop Stands</h3>
-        <a href="#" class="btn-link">LEARN MORE</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section featured-products">
-    <div class="container text-center">
-      <h2>Featured Products</h2>
-      <p class="subtitle">See What's Trending Right Now</p>
-    </div>
-
-    <div class="container products-grid">
-      <div class="product-item">
-        <div class="product-img">
-          <img src="img/Rectangle (3).png" alt="Walnut MagSafe Stand">
-        </div>
-        <h4>Walnut MagSafe Stand</h4>
-        <p class="price">$120</p>
-      </div>
-      <div class="product-item">
-        <div class="product-img">
-          <img src="img/Rectangle (4).png" alt="Walnut Laptop Riser">
-        </div>
-        <h4>Walnut Laptop Riser</h4>
-        <p class="price">$150</p>
-      </div>
-      <div class="product-item">
-        <div class="product-img">
-          <img src="img/Rectangle (5).png" alt="Walnut iPad Stand">
-        </div>
-        <h4>Walnut iPad Stand</h4>
-        <p class="price">$80</p>
-      </div>
-      <div class="product-item">
-        <div class="product-img">
-          <img src="img/Rectangle (6).png" alt="Walnut Monitor Stand">
-        </div>
-<h4>Walnut Monitor Stand</h4>
-        <p class="price">$100</p>
-      </div>
-    </div>
-  </section>
-
-
-<section class="hero-banner home-office-banner">
-    <div class="hero-content">
-      <h2>Home Office Inspiration</h2>
-      <p>Working from home can be a challenge—see some creative solutions to get it just right.</p>
-      <a href="#" class="btn-link">LEARN MORE</a>
-    </div>
-  </section>
-
-  <section class="section about-section">
-    <div class="container text-center max-w-text">
-      <h2>Made The Hard Way</h2>
-      <p class="description">
-        Our signature craftsmanship has been honed over a decade of manufacturing innovation here in Portland, Oregon. We combine the skills of our small in-house team with the collective strength of collaborators throughout the US to deliver quality products worth investing in.
-      </p>
-    </div>
-
-    <div class="container">
-      <img src="img/image 1.png" alt="Grovemade Building" class="full-width-img">
-    </div>
-
-    <div class="container text-center max-w-text margin-top">
-      <h2>Make Work Meaningful</h2>
-      <p class="description">
-        We're here because we believe that your work deserves the best. A team that loves working together is the magic that makes it all happen.
-      </p>
-    </div>
-
-    <div class="container">
-      <img src="img/Frame (3).png" alt="Team" class="full-width-img">
-    </div>
-
-    <div class="container text-center margin-top">
-      <h2>We Hope You'll Join Us</h2>
-      <a href="#" class="btn-link">READ MORE ABOUT OUR STORY</a>
-    </div>
-  </section>
-
-
-<section class="banner-grey text-center">
-    <div class="logo-icon"><img src="./img/Rectangle (8).png" alt=""></div>
-    <h2>Design Inspires</h2>
-    <p>Build your dream workspace, so you can get your best work done.</p>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Journal</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">COVID-19 Info</a></li>
-          <li><a href="#">Order Status</a></li>
-          <li><a href="#">Corporate Sales</a></li>
-        </ul>
-      </div>
-
-      <div class="newsletter">
-        <h3>Newsletter Signup</h3>
-        <p>Sign up to our Newsletter to hear about new product releases, learn about our design process, and everything else going on behind the scenes at Grovemade.</p>
-        <div class="input-group">
-          <input type="email" placeholder=" ">
-        </div>
-
-
-
-
-      </div>
-      <a href="#" class="go-up-btn">GO UP</a>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>©2020 Grovemade</span>
-      <div class="legal-links">
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
-<span>Site by Department</span>
-      </div>
-    </div>
-  </footer>
-
-
-</body>
+  </body>
 </html>
